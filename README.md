@@ -1,6 +1,6 @@
 # Chatroom Webpage
 
-Its a Persian/Arabic rtl webpage and Its like a chat app;ication . 
+Its a Persian/Arabic rtl webpage and Its like a chat application . 
 
 ## How It looks
 
