@@ -1,0 +1,212 @@
+/*mine*/
+@font-face {
+        font-family: 'BMorvarid';
+        src: url('../fonts/BMorvarid.eot'); /* IE9 Compat Modes */
+        src: url('../fonts/BMorvarid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+               url('../fonts/BMorvarid.woff') format('woff'), /* Pretty Modern Browsers */
+               url('../fonts/BMorvarid.ttf')  format('truetype'); /* Safari, Android, iOS */
+} 
+@font-face {
+    font-family: 'Far_Nastaliq';
+    src: url('../fonts/Far_Nastaliq.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Far_Nastaliq.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+           url('../fonts/Far_Nastaliq.woff') format('woff'), /* Pretty Modern Browsers */
+           url('../fonts/Far_Nastaliq.ttf')  format('truetype'); /* Safari, Android, iOS */
+} 
+body {
+    background-image: url("../img/bg.jpg");
+    margin: 0px;
+    padding: 0px;
+    position: relateive;
+    text-align: right;
+    direction: rtl;
+    overflow: hidden;
+}
+
+.chatmenu .ui.menu .item>i.icon {
+    margin: 0% 0% 0% 5%;
+    font-size: 120%;
+}
+.chatmenu .item {
+    width: 14%;
+}
+.chatmenu .item span {
+    font-size: 60%!important;
+}
+
+.bottom-menu {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    text-align: center;
+    width: 110%;
+}
+.bottom-menu .ui.inverted.olive.menu {
+    width: 110%;
+    margin-right: 10px;
+}
+.bottom-menu .ui.menu.three.item .item {
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+.ui.menu {
+    font-family: "BMorvarid"!important;
+    font-size: 150%;
+}
+.bottom-menu .ui.menu .item>i.icon {
+    margin: 0px 30px 0px 5px;
+    font-size: 150%;
+}
+
+/***********chats main***************/
+.contacts .contactin , .chat .chatin {
+    background-color: rgba(212, 255, 112,0.8) ;
+    margin:10px auto !important;
+    width: 80% !important;
+    height: 78vh !important;
+    border-radius: 5px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.people {
+    position: relative;
+    width: 97% !important;
+    height: 100px !important;
+    border-radius: 53px 0px 0px 53px !important;
+    margin : 5px -3px 5px 0px !important;
+    display: none;
+}
+.people .ui.image {
+    position: absolute !important;
+    height: 100% !important;
+    top: 0 !important;
+    left: 0 !important;
+}
+.people span {
+    position: absolute !important;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.people h3 {
+    font-family: "Far_Nastaliq" !important;
+    font-size: 280% !important;
+    margin: 1% 3% !important;
+}
+.people i.inverted.circular.icon {
+    margin-top: 1% !important;
+}
+.people .mess , .time {
+    float: right;
+    color: #666;
+    font-family: "Far_Nastaliq" !important;
+    font-size: 200% !important;
+}
+.people .time {
+    margin-right: 10%;
+}
+
+.chat .chatin {
+    background-image: url('../img/chat-bg.jpg');
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.chat .chatin .chathead {
+    display: block !important;
+    height: 130px;
+    background-color: rgba(212, 255, 112,1) ;
+    border-bottom: 3px solid #fff;
+} 
+.chat .chatin .chathead i.inverted.circular.red.icon {
+    position: absolute;
+    top: 19%;
+    left: 30%;
+}
+.chat .chatin .chathead i.inverted.circular.pink.icon {
+    position: absolute !important;
+    top: 14%;
+    left: 32%;
+}
+.chat .chatin .chathead i.inverted.circular.brown.icon {
+    position: absolute !important;
+    top: 8%;
+    left: 32%;
+}
+.chat .chatin .chathead i.inverted.circular.blue.icon {
+    position: absolute !important;
+    top: 3%;
+    left: 30%;
+}
+.chat .chatin .chathead .ui.header {
+    font-family: "Far_Nastaliq" !important;
+    font-size: 700% !important;
+}
+.chat .chatin .chathead .last{
+    font-family: "Far_Nastaliq" !important;
+    font-size: 200% !important;
+    line-height: 400% !important;
+    color: #666;
+}
+
+.chat .chatin .chatplace {
+    height: 335px;
+}
+.chat .chatin .write .field {
+    width: 78%;
+    float: right;
+    display: inline-block;
+    margin-right: 5px;
+}
+.chat .chatin .write  button {
+    float: right;
+}
+
+/***********bottom menu changes***************/
+@media screen and (max-width: 600px) {
+    .bottom-menu .ui.menu.three.item .item span {
+        display: none;
+        margin: 5px 0px;
+    }
+}
+/***********chat menu changes***************/
+@media screen and (max-width: 860px) {
+    .chatmenu .item span {
+        display: none;
+    }
+    .chatmenu .ui.menu .item>i.icon {
+        margin-right: 23%!important;
+    }
+}
+@media screen and (max-width: 570px) {
+    .chatmenu .ui.menu .item>i.icon {
+        margin-right: 7%!important;
+        font-size: 90%;
+    }
+}
+@media screen and (max-width: 440px) {
+    .chatmenu .item {
+        width: 10%;
+        text-align: center;
+    }
+    .chatmenu .ui.menu .item>i.icon {
+        font-size: 80%;
+        margin-right: -7px!important;
+    }
+}
+/***********people changes***************/
+@media screen and (max-width: 1059px) {
+    .ui.grid>.row>.chat {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 502px){
+    .people .time {
+        display: none;
+    }
+}
+@media screen and (max-width: 410px){
+    .people .mess , i.inverted.circular.icon {
+        display: none;
+    }
+}
